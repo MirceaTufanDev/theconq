@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Bundle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>THE LORD OF THE RINGS Virtual Challenges are HERE!</p>
+        </div>
+        <div class="logo-container">
+            <img src="logo.png" alt="The Conqueror Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Challenges</a></li>
+                <li><a href="#">LOTR</a></li>
+                <li><a href="#">Merch</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Shop</a></li>
+                <li class="cart">
+                    <a href="#"><img src="cart-icon.png" alt="Cart"></a>
+                    <div class="cart-dropdown">
+                        <h4>Your Cart</h4>
+                        <ul id="cart-list"></ul>
+                        <p>Total: $<span id="cart-total">0</span></p>
+                        <button id="checkout-button">Checkout</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>All challenges</h1>
+        <div class="sort-options">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="popular">Popular</option>
+                <option value="new">New</option>
+                <option value="distance">Distance</option>
+            </select>
+        </div>
+        <div class="challenge-container">
+            <div class="challenge-card" data-title="Mount Kilimanjaro" data-distance="97 km" data-cost="50">
+                <div class="card-background">
+                    <img src="mount-kilimanjaro-background.png" alt="Mount Kilimanjaro Backgorund">
+                </div>
+                <div class="card-image">
+                    <img src="mount-kilimanjaro.png" alt="Mount Kilimanjaro">
+                </div>
+                <div class="card-content">
+                    <h2>Mount Kilimanjaro</h2>
+                    <p>60 mi / 97 km</p>
+                    <p class="description">5 Virtual Postcards<br>No StreetView</p>
+                    <button class="add-to-bundle">Add challenge</button>
+                </div>
+            </div>
+            <div class="challenge-card" data-title="Berlin Wall" data-distance="97 km" data-cost="50">
+                <div class="card-background">
+                    <img src="berlin-wall-background.png" alt="Mount Kilimanjaro Backgorund">
+                </div>
+                <div class="card-image">
+                    <img src="berlin-wall.png" alt="Berlin Wall">
+                </div>
+                <div class="card-content">
+                    <h2>Berlin Wall</h2>
+                    <p>30 mi / 48 km</p>
+                    <p class="description">5 Virtual Postcards<br>Has StreetView</p>
+                    <button class="add-to-bundle">Add challenge</button>
+                </div>
+            </div>
+            <div class="challenge-card" data-title="Angkor Wat" data-distance="97 km" data-cost="50">
+                <div class="card-background">
+                    <img src="angkor-wat-background.png" alt="Mount Kilimanjaro Backgorund">
+                </div>
+                <div class="card-image">
+                    <img src="angkor-wat.png" alt="Angkor Wat">
+                </div>
+                <div class="card-content">
+                    <h2>Angkor Wat</h2>
+                    <p>20 mi / 36 km</p>
+                    <p class="description">4 Virtual Postcards<br>Has StreetView</p>
+                    <button class="add-to-bundle">Add challenge</button>
+                </div>
+            </div>
+            <div class="challenge-card" data-title="Inca Trail" data-distance="97 km" data-cost="50">
+                <div class="card-background">
+                    <img src="inca-trail-background.png" alt="Mount Kilimanjaro Backgorund">
+                </div>
+                <div class="card-image">
+                    <img src="inca-trail.png" alt="Inca Trail">
+                </div>
+                <div class="card-content">
+                    <h2>Inca Trail</h2>
+                    <p>26 mi / 42 km</p>
+                    <p class="description">4 Virtual Postcards<br>Has StreetView</p>
+                    <button class="add-to-bundle">Add challenge</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="notification-bar">
+            <p>Get notified when we release a new challenge</p>
+            <form class="notification-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <div>
+                <img src="white-logo.png" alt="The Conqueror Logo" class="footer-logo">
+            </div>
+            <div>
+                <h4>ABOUT</h4>
+                <a href="#">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Our Causes</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">Media</a><br>
+                <a href="#">Support Center</a><br>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="tiktok-icon.png" alt="TikTok"></a>
+                </div>
+            </div>
+            <div>
+                <h4>THE CONQUEROR OFFERINGS</h4>
+                <a href="#">Corporate Wellness</a><br>
+                <a href="#">My Virtual Mission</a><br>
+                <a href="#">The Conqueror Adventures</a><br>
+                <a href="#">Virtual Challenges</a><br>
+                <a href="#">Virtual Walking</a><br>
+                <a href="#">Virtual Race</a><br>
+                <a href="#">Virtual Running</a><br>
+            </div>
+            <div>
+                <h4>PRIVACY NOTICE</h4>
+                <a href="#">To read our privacy notice including our GDPR policy, please click here.</a>
+                <h4>TERMS OF SERVICE</h4>
+                <a href="#">To read our terms of service click here</a>
+                <h4>DOWNLOAD THE APP</h4>
+                <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                <a href="#"><img src="app-store.png" alt="App Store"></a>
+            </div>
+        </div>
+        <p>© ACTIONARY LIMITED. ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
